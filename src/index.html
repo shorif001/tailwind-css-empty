@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwindcss</title>
     <link rel="stylesheet" href="/output/tailwind.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <!-- 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 -->
 <!-- https://www.youtube.com/watch?v=2f7ugQ16NKc&t=1496s&ab_channel=AfranSarkar -->
+
 <body>
+
+    <header>
+        <nav class=" bg-white shadow md:flex md:items-center md:justify-between">
+            <div class="flex justify-between items-center">
+                <span class="flex md:items-center text-xl items-center">
+                    <img class="h-20 p-0 m-0"
+                        src="https://tailwindcss.com/_next/static/media/social-square.b622e290e82093c36cca57092ffe494f.jpg"
+                        alt="">Tailwind
+                </span>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+
+            <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                <li class="mx-4" my-6 md:my-0>
+                    <a href="#" class="text-xl hover:text-cyan-500 duratin-500">Home</a>
+                </li>
+                <li class="mx-4" my-6 md:my-0>
+                    <a href="#" class="text-xl hover:text-cyan-500 duratin-500">About</a>
+                </li>
+                <li class="mx-4" my-6 md:my-0>
+                    <a href="#" class="text-xl hover:text-cyan-500 duratin-500">Contact</a>
+                </li>
+                <button
+                    class="bg-cyan-400 text-black font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">Get
+                    Started</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
     <div class="screen flex items-center justify-center">
         <div class="max-w-sm mx-auto p-8 bg-gray-900 text-white text-center">
             <img src="./images/logo22.png" alt="learn tailwind">
@@ -20,13 +57,32 @@
     </div>
 
     <div class="flex flex-row sm:flex-col md:flex-row lg:flex-row">
-        <p class="bg-yellow-400 m-2 p-2 hover:bg-sky-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-        <p class="bg-green-400 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-        <p class="bg-blue-500 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-        <p class="bg-purple-800 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-        <p class="bg-pink-800 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
+        <p class="bg-yellow-400 m-2 p-2 hover:bg-sky-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Fugiat nemo dolores suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
+        <p class="bg-green-400 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
+            suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
+        <p class="bg-blue-500 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
+            suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
+        <p class="bg-purple-800 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
+            suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
+        <p class="bg-pink-800 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
+            suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
     </div>
+    </main>
+
+    <footer>
+
+    </footer>
 
 
+
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')):( e.name = 'menu', list.classList.remove('opacity-100'))
+        }
+    </script>
 </body>
+
 </html>
