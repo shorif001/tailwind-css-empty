@@ -556,6 +556,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: row;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
