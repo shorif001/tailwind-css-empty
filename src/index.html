@@ -11,6 +11,12 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- ionic cdn end -->
+
+    <!-- image slide with swiperjs start -->
+    <!-- https://www.youtube.com/watch?v=ADFCBER4Z8Q&ab_channel=ShamvuChandra -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- image slide with swiperjs end -->
+
 </head>
 <!-- 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 -->
 <!-- https://www.youtube.com/watch?v=2f7ugQ16NKc&t=1496s&ab_channel=AfranSarkar -->
@@ -50,27 +56,56 @@
 
     <main>
 
-        <div class="screen flex items-center justify-center">
-            <div class="max-w-sm mx-auto p-8 bg-gray-900 text-white text-center">
+        <!-- Slider main container -->
+        <div class="swiper w-full h-screen">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="object-center object-cover w-full h-full" src="images/cover1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="object-center object-cover w-full h-full" src="images/cover2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="object-center object-cover w-full h-full" src="images/cover3.jpg" alt="">
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <!-- <div class="flex items-center justify-center">
+            <div class=" mx-auto p-8 bg-gray-900 text-white text-center">
                 <img src="./images/logo22.png" alt="learn tailwind">
                 <div>Learn with shorif</div>
                 <div>Shorif Youtube Channel</div>
                 <button>Visit now</button>
             </div>
-        </div>
+        </div> -->
 
         <div class="flex flex-col md:flex-row lg:flex-row ">
             <p class="bg-yellow-400 m-2 p-2 hover:bg-sky-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Fugiat nemo dolores suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-            <p class="bg-green-400 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo
+            <p class="bg-green-400 m-2 p-2 text-white md:text-yellow-300 lg:text-black"">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo
                 dolores
                 suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-            <p class="bg-blue-500 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
+            <p class=" bg-blue-500 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo
+                dolores
                 suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
             <p class="bg-purple-800 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo
                 dolores
                 suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-            <p class="bg-pink-800 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
+            <p class="bg-pink-800 m-2 p-2"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo
+                dolores
                 suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
         </div>
     </main>
@@ -80,6 +115,36 @@
     </footer>
 
 
+    <!-- image slide with swiperjs start -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            speed: 400,
+            spaceBetween: 100,
+            autoplay:{
+                delay:3000,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+    <!-- image slide with swiperjs end -->
 
     <script>
         function Menu(e) {
