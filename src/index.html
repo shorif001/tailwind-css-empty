@@ -30,7 +30,8 @@
                 </span>
             </div>
 
-            <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <ul
+                class="md:flex md:items-center z-[1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
                 <li class="mx-4" my-6 md:my-0>
                     <a href="#" class="text-xl hover:text-cyan-500 duratin-500">Home</a>
                 </li>
@@ -49,27 +50,29 @@
 
     <main>
 
-    <div class="screen flex items-center justify-center">
-        <div class="max-w-sm mx-auto p-8 bg-gray-900 text-white text-center">
-            <img src="./images/logo22.png" alt="learn tailwind">
-            <div>Learn with shorif</div>
-            <div>Shorif Youtube Channel</div>
-            <button>Visit now</button>
+        <div class="screen flex items-center justify-center">
+            <div class="max-w-sm mx-auto p-8 bg-gray-900 text-white text-center">
+                <img src="./images/logo22.png" alt="learn tailwind">
+                <div>Learn with shorif</div>
+                <div>Shorif Youtube Channel</div>
+                <button>Visit now</button>
+            </div>
         </div>
-    </div>
 
-    <div class="flex flex-col md:flex-row lg:flex-row ">
-        <p class="bg-yellow-400 m-2 p-2 hover:bg-sky-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Fugiat nemo dolores suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-        <p class="bg-green-400 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
-            suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-        <p class="bg-blue-500 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
-            suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-        <p class="bg-purple-800 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
-            suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-        <p class="bg-pink-800 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
-            suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
-    </div>
+        <div class="flex flex-col md:flex-row lg:flex-row ">
+            <p class="bg-yellow-400 m-2 p-2 hover:bg-sky-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fugiat nemo dolores suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
+            <p class="bg-green-400 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo
+                dolores
+                suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
+            <p class="bg-blue-500 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
+                suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
+            <p class="bg-purple-800 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo
+                dolores
+                suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
+            <p class="bg-pink-800 m-2 p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nemo dolores
+                suscipit doloremque porro nam ipsa facilis natus laboriosam unde?</p>
+        </div>
     </main>
 
     <footer>
@@ -79,10 +82,11 @@
 
 
     <script>
-        function Menu(e){
+        function Menu(e) {
             let list = document.querySelector('ul');
 
-            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')):( e.name = 'menu', list.classList.remove('opacity-100'))
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add(
+                'opacity-100')) : (e.name = 'menu', list.classList.remove('opacity-100'))
         }
     </script>
 </body>
